@@ -1,0 +1,660 @@
+body {
+    background-image: url("pictures/darkbackground.jpg");
+    background-size: cover;
+}
+
+/* about.html */
+.about-detail {
+    color: white;
+    text-align: center;
+    margin: 1vh auto;
+}
+.about-detail > h2 {
+    font-size: 3vw;
+    font-family: "Quicksand", sans-serif;
+    font-weight: lighter;
+    margin: 5vw 0 1vw 0;
+}
+.about-detail > p {
+    line-height: 2vw;
+}
+.about-detail > ul {
+    list-style: none;
+    line-height: 2vw;
+}
+.about-detail li::before {
+    content: "¶";
+    color: white;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.phase-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.phase-column {
+    display: flex;
+    flex-direction: column;
+    height: 20vw;
+    padding: 0 2vw;
+    justify-content: center;
+}
+.bk1 {
+    background-color: rgb(245, 158, 158);
+    border-radius: 1vw 0 0 1vw;
+}
+.bk2 {
+    background-color: rgb(139, 139, 248);
+}
+.bk3 {
+    background-color: rgb(168, 250, 168);
+    border-radius: 0 1vw 1vw 0;
+}
+#leadership {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#leadership-text {
+    color: white;
+    padding: 1vh 2vw;
+}
+#leadership-text div:nth-child(3) {
+    text-align: justify;
+}
+#leadership-img {
+    border: solid red;
+    transform: skewY(3deg);
+    transition: transform 0.5s;
+}
+#leadership-img:hover {
+    transform: none !important;
+    cursor: pointer;
+    box-shadow: 0.3vw 0.3vw 0.4vw 0.3vw red;
+}
+#leadership-img:hover + #leadership-text {
+    background-color: black;
+}
+
+/* demo.html */
+.demo-container {
+    margin: 2vh auto;
+    text-align: center;
+    /* background-color: white; */
+}
+.demo {
+    margin: 1vh 2vw;
+    border: solid red 0.2vw;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+.demo-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.demo-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#demo1,
+#demo6 {
+    height: 40vw;
+    width: 30vw;
+}
+#demo2,
+#demo3,
+#demo4,
+#demo5 {
+    height: 18vw;
+    width: 30vw;
+}
+#demo7,
+#demo8,
+#demo9 {
+    height: 20vw;
+    width: 25vw;
+}
+
+.enter-animation {
+    animation-name: slide;
+    animation-duration: 0.9s;
+    visibility: visible !important;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+/* social.html */
+.social-roll {
+    background-color: whitesmoke;
+    margin: 1vh auto 5vh;
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 2vw;
+    justify-content: center;
+    border-radius: 1vw;
+}
+.social-roll div {
+    text-align: center;
+}
+.social-img {
+    margin: 1vh 2vw;
+    border-radius: 8vw 8vw 8vw 8vw;
+    overflow: hidden;
+}
+.social-box:hover {
+    cursor: pointer;
+}
+.social-img:hover {
+    transform: scale(1.1);
+}
+.social-text {
+    color: orange;
+}
+.social-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+.social-modal-content {
+    position: fixed;
+    background-color: #fefefe;
+    border: solid red;
+    border-style: ridge;
+    border-radius: 1vw;
+    overflow: hidden;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+.social-modal-header {
+    padding: 0.2vw 2vw;
+    background-color: black;
+    color: Orange;
+}
+.social-modal-body {
+    padding: 0.2vw 2vw 1vw;
+    text-align: justify;
+}
+.social-modal-body img {
+    width: 20vw;
+    height: 15vw;
+    float: left;
+    margin: 1.3vw 1vw 0 0;
+}
+.social-modal-body:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.social-modal-footer {
+    padding: 0.1vw 2vw;
+    background-color: orange;
+    color: black;
+}
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* vr.html */
+.vr-text {
+    text-align: justify;
+    color: white;
+    padding: 2vh 2vw;
+    margin: 2vh auto;
+    background-color: grey;
+}
+.vr-text > h2 {
+    color: yellow;
+}
+.vr-text > div > img {
+    width: 50vw;
+    margin: 0 auto;
+    border-radius: 2vw;
+}
+
+/* contact.html */
+.contact-text {
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+fieldset {
+    background-color: lightcoral;
+    text-align: center;
+    margin: 0 auto 2vh;
+    border: solid green;
+    border-radius: 2vw;
+}
+legend {
+    display: inline-block;
+    color: yellow;
+}
+input {
+    display: inline-block;
+    background-color: white;
+    padding: 1vh 1vw;
+}
+textarea {
+    display: inline-block;
+    background-color: whitesmoke;
+    padding: 1vh 1vw;
+    margin: 1vh auto 0;
+}
+
+/* career.html */
+.career-text {
+    background-color: grey;
+    color: white;
+    text-align: justify;
+    margin: 1vh auto;
+    padding: 2vh 3vw;
+}
+.career-text > h2 {
+    color: yellow;
+}
+#apply {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 0.5vw;
+    margin: 1vh 1vw;
+    border-radius: 0.5vw;
+}
+#apply:hover,
+#apply:focus {
+    color: red;
+    background-color: black;
+}
+@media (max-width: 700px) {
+    .subpage-content {
+        min-height: 6vh !important;
+    }
+    .about-detail {
+        width: 90%;
+    }
+    .about-detail > p {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+    .about-detail > ul {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+    .phase-column {
+        width: 30vw;
+    }
+    .phase-column > div > img {
+        width: 7vw;
+        height: 7vw;
+    }
+    .phase-column div:nth-child(2) {
+        color: black;
+        font-size: 2.3vw;
+        font-family: sans-serif;
+    }
+    .phase-column div:nth-child(3) {
+        font-size: 1.6vw;
+        color: rgb(70, 14, 45);
+    }
+    #leadership {
+        margin: 0 0 2vh 0;
+    }
+    #leadership-text {
+        width: 60vw;
+        line-height: 1.8vw;
+    }
+    #leadership-img {
+        width: 30vw;
+        height: 40vw;
+    }
+    #leadership-text div:first-child {
+        font-size: 2.5vw;
+        margin: 0.5vh auto;
+    }
+    #leadership-text div:nth-child(2) {
+        font-size: 1.8vw;
+    }
+    #leadership-text div:nth-child(3) {
+        font-size: 1.8vw;
+        margin: 0.5vh auto;
+    }
+    .demo-container {
+        width: 95vw;
+    }
+    #demo1,
+    #demo2,
+    #demo3,
+    #demo4,
+    #demo5,
+    #demo6 {
+        width: 40vw !important;
+    }
+    #demo1,
+    #demo6 {
+        height: 40vh;
+    }
+    #demo2,
+    #demo3,
+    #demo4,
+    #demo5 {
+        height: 19vh;
+    }
+    .social-roll {
+        width: 95vw;
+    }
+    .social-img img {
+        width: 28vw;
+        height: 40vw;
+    }
+    .social-text {
+        font-size: 2.5vw;
+    }
+    .social-modal-content {
+        width: 90%;
+        left: 5%;
+        bottom: 20%;
+    }
+    .social-modal-header {
+        font-size: 2.5vw;
+    }
+    .social-modal-body {
+        line-height: 3vw;
+        font-size: 2.5vw;
+    }
+    .social-modal-footer {
+        font-size: 2.5vw;
+    }
+    .vr-text {
+        width: 95%;
+        font-size: 2.8vw;
+    }
+    .contact-text {
+        font-size: 2.5vw;
+        width: 99%;
+    }
+    fieldset {
+        width: 98vw;
+    }
+    legend {
+        font-size: 3.5vw;
+    }
+    #contact-street {
+        width: 90vw;
+    }
+    input {
+        width: 45vw;
+    }
+    textarea {
+        width: 90vw;
+        height: 30vh;
+    }
+    .career-text {
+        width: 95%;
+        font-size: 3vw;
+    }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+    .subpage-content {
+        min-height: 6vh !important;
+    }
+    .about-detail {
+        width: 85%;
+    }
+    .about-detail > p {
+        font-size: 2.1vw;
+        line-height: 2.1vw;
+    }
+    .about-detail > ul {
+        font-size: 2.1vw;
+        line-height: 2.1vw;
+    }
+    .phase-column {
+        width: 28vw;
+    }
+    .phase-column > div > img {
+        width: 6vw;
+        height: 6vw;
+    }
+    .phase-column div:nth-child(2) {
+        color: black;
+        font-size: 2.2vw;
+        font-family: sans-serif;
+    }
+    .phase-column div:nth-child(3) {
+        font-size: 1.3vw;
+        color: rgb(70, 14, 45);
+    }
+    #leadership {
+        margin: 0 0 3vh 0;
+    }
+    #leadership-text {
+        width: 50vw;
+        line-height: 1.7vw;
+    }
+    #leadership-img {
+        width: 28vw;
+        height: 37vw;
+    }
+    #leadership-text div:first-child {
+        font-size: 2vw;
+        margin: 1vh auto;
+    }
+    #leadership-text div:nth-child(2) {
+        font-size: 1.4vw;
+    }
+    #leadership-text div:nth-child(3) {
+        font-size: 1.4vw;
+        margin: 0.5vh auto;
+    }
+    .demo-container {
+        width: 90vw;
+    }
+    .social-roll {
+        width: 90vw;
+    }
+    .social-img img {
+        width: 25vw;
+        height: 35vw;
+    }
+    .social-text {
+        font-size: 2vw;
+    }
+    .social-modal-content {
+        width: 80%;
+        left: 10%;
+        bottom: 20%;
+    }
+    .social-modal-header {
+        font-size: 2.5vw;
+    }
+    .social-modal-body {
+        line-height: 2.5vw;
+        font-size: 2.2vw;
+    }
+    .social-modal-footer {
+        font-size: 2.5vw;
+    }
+    .vr-text {
+        width: 90%;
+        font-size: 2vw;
+    }
+    .contact-text {
+        font-size: 2.5vw;
+        width: 90%;
+    }
+    fieldset {
+        width: 80vw;
+    }
+    legend {
+        font-size: 3vw;
+    }
+    #contact-street {
+        width: 79vw;
+    }
+    input {
+        width: 39vw;
+    }
+    textarea {
+        width: 80vw;
+        height: 30vh;
+    }
+    .career-text {
+        width: 90%;
+        font-size: 2.8vw;
+    }
+}
+@media (min-width: 1200px) {
+    .subpage-content {
+        min-height: 10vh !important;
+    }
+    .about-detail {
+        width: 80%;
+    }
+    .about-detail > p {
+        font-size: 1.5vw;
+    }
+    .about-detail > ul {
+        font-size: 1.5vw;
+    }
+    .phase-column {
+        width: 25vw;
+    }
+    .phase-column > div > img {
+        width: 4vw;
+        height: 4vw;
+    }
+    .phase-column div:nth-child(2) {
+        color: black;
+        font-size: 2vw;
+        font-family: sans-serif;
+    }
+    .phase-column div:nth-child(3) {
+        font-size: 1.3vw;
+        color: rgb(70, 14, 45);
+    }
+    #leadership {
+        margin: 0 0 6vh 0;
+    }
+    #leadership-text {
+        width: 45vw;
+        line-height: 1.5vw;
+    }
+    #leadership-img {
+        width: 24vw;
+        height: 32vw;
+    }
+    #leadership-text div:first-child {
+        font-size: 2vw;
+        margin: 1.5vh auto;
+    }
+    #leadership-text div:nth-child(2) {
+        font-size: 1.2vw;
+    }
+    #leadership-text div:nth-child(3) {
+        font-size: 1.2vw;
+        margin: 1vh auto;
+    }
+    .demo-container {
+        width: 80vw;
+    }
+    #demo2,
+    #demo3,
+    #demo6,
+    #demo7,
+    #demo8,
+    #demo9 {
+        visibility: hidden;
+    }
+    .social-roll {
+        width: 80vw;
+    }
+    .social-img img {
+        width: 20vw;
+        height: 15vw;
+    }
+    .social-text {
+        font-size: 1.5vw;
+    }
+    .social-modal-content {
+        width: 60%;
+        left: 20%;
+        bottom: 10%;
+    }
+    .social-modal-body {
+        line-height: 1.5vw;
+        font-size: 1.2vw;
+    }
+    .vr-text {
+        width: 80%;
+        font-size: 1.3vw;
+    }
+    .contact-text {
+        font-size: 1.8vw;
+        width: 80%;
+    }
+    fieldset {
+        width: 50vw;
+    }
+    legend {
+        font-size: 2vw;
+    }
+    #contact-street {
+        width: 40.5vw;
+    }
+    input {
+        width: 20vw;
+    }
+    textarea {
+        width: 40.5vw;
+        height: 20vw;
+    }
+    .career-text {
+        width: 80%;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Demo</title>
+        <link rel="icon" href="pictures/logo.png" />
+    </head>
+    <body>
+        <div id="homepage-header"></div>
+        <div class="demo-container">
+            <div class="demo-row">
+                <div class="demo-column">
+                    <iframe
+                        id="demo1"
+                        class="demo enter-animation"
+                        src="https://www.youtube.com/embed/llnOTI8Vcyo"
+                    ></iframe>
+                    <iframe
+                        id="demo2"
+                        class="demo"
+                        src="https://www.youtube.com/embed/CnoMGJPXiNQ"
+                    >
+                    </iframe>
+                    <iframe
+                        id="demo3"
+                        class="demo"
+                        src="https://www.youtube.com/embed/fojciCcLUEU"
+                    >
+                    </iframe>
+                </div>
+                <div class="demo-column">
+                    <iframe
+                        id="demo4"
+                        class="demo enter-animation"
+                        src="https://www.youtube.com/embed/wyOh2RbKwk4"
+                    >
+                    </iframe>
+                    <iframe
+                        id="demo5"
+                        class="demo enter-animation"
+                        src="https://www.youtube.com/embed/25gjGCgoACY"
+                    ></iframe>
+                    <iframe
+                        id="demo6"
+                        class="demo"
+                        src="https://www.youtube.com/embed/B0Z_ImEWNbE"
+                    >
+                    </iframe>
+                </div>
+            </div>
+            <div class="demo-row">
+                <iframe
+                    id="demo7"
+                    class="demo"
+                    src="https://www.youtube.com/embed/ItsU0JColK8"
+                ></iframe>
+                <iframe
+                    id="demo8"
+                    class="demo"
+                    src="https://www.youtube.com/embed/wMihd3BZLYs"
+                >
+                </iframe>
+                <iframe
+                    id="demo9"
+                    class="demo"
+                    src="https://www.youtube.com/embed/0jL_Ok2hBD0"
+                ></iframe>
+            </div>
+        </div>
+        <hr />
+        <div id="homepage-footer"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $("#homepage-header").load("header.html");
+            });
+            $(function () {
+                $("#homepage-footer").load("footer.html");
+            });
+        </script>
+        <script src="demo.js"></script>
+    </body>
+</html>

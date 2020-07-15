@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Enhance VR</title>
+        <link rel="icon" href="pictures/logo.png" />
+        <link rel="stylesheet" href="index.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&family=Quicksand:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="jquery.youtube-background.js?v=1.0.7"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <div class="example-marquee">
+                <div
+                    id="ytbg"
+                    data-ytbg-fade-in="true"
+                    data-youtube="https://www.youtube.com/watch?time_continue=162&v=w6_uw4-A8wM&feature=emb_title"
+                ></div>
+                <div class="content">
+                    <div id="header-bar">
+                        <div class="logo">
+                            <img
+                                src="pictures/logo2.png"
+                                onclick="window.location.href='index.html'"
+                            />
+                        </div>
+                        <div class="nav-bar">
+                            <h2 onclick="window.location.href='index.html'">
+                                HOME
+                            </h2>
+                            <h2 onclick="window.location.href='about.html'">
+                                ABOUT
+                            </h2>
+                            <h2 onclick="window.location.href='demo.html'">
+                                DEMO
+                            </h2>
+                            <h2 onclick="window.location.href='social.html'">
+                                SOCIAL
+                            </h2>
+                            <h2 onclick="window.location.href='vr.html'">VR</h2>
+ 
+                            <h2 onclick="window.location.href='contact.html'">
+                                CONTACT
+                            </h2>
+                            <h2 onclick="window.location.href='career.html'">
+                                CAREER
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="section-title">Our Mission</div>
+        <div class="intro-img-roll">
+            <div class="img-roll-container">
+                <img class="img-roll-imgs" src="pictures/img-roll-img1.png" />
+                <div class="img-text-centered">Who We Are</div>
+                <div class="img-text-centered img-text-detail">Our mission is to use virtual reality to develop engaging, consistent, and scalable on-the-job virtual training.</div>
+            </div>
+            <div class="img-roll-container">
+                <img class="img-roll-imgs" src="pictures/img-roll-img2.jpg" />
+                <div class="img-text-centered">What We Do</div>
+                <div class="img-text-centered img-text-detail">We make custom-designed training simulations and education modules to strengthen existing training initiatives. Industries we serve include healthcare, manufacturing, and material handling.</div></div>
+            <div class="img-roll-container">
+                <img class="img-roll-imgs" src="pictures/img-roll-img3.jpg" />
+                <div class="img-text-centered">How Do We Help</div>
+                <div class="img-text-centered img-text-detail">We work closely with your training team to develop the experience, curriculum, and analytics that will ensure preparation and drive results.</div>
+            </div>
+        </div>
+        <div class="section-title">Featured Projects</div>
+        <div class="demo-roll">
+            <iframe src="https://www.youtube.com/embed/llnOTI8Vcyo"></iframe>
+            <iframe src="https://www.youtube.com/embed/CnoMGJPXiNQ"> </iframe>
+        </div>
+        <div class="demo-roll">
+            <iframe src="https://www.youtube.com/embed/fojciCcLUEU"> </iframe>
+            <iframe src="https://www.youtube.com/embed/wyOh2RbKwk4"> </iframe>
+        </div>
+        <div class="section-title">
+            <div>See More</div>
+            <div><img id="moreDemo" src="pictures/down-arrow.svg" onclick="window.location.href='demo.html'"></div>
+        </div>
+        <hr />
+        <footer>
+            <div class="info">
+                <div>120 Hawley Street</div>
+                <div>Binghamton, NY 13901</div>
+                <div>(607) 426-8205</div>
+            </div>
+            <div class="social-container">
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.facebook.com/enhancevr/"
+                            ><i class="fa fa-facebook"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/enhancevr/"
+                            ><i class="fa fa-instagram"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/enhance_vr"
+                            ><i class="fa fa-twitter"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/enhance-vr/"
+                            ><i class="fa fa-linkedin"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/channel/UCgrpl2TAe8qWDixvSKyXC9g"
+                            ><i class="fa fa-youtube"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copy-info">
+                <div>&#169 2020 Enhance VR. All Rights Reserved.</div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                jQuery("[data-youtube]").youtube_background();
+            });
+        </script>
+        <script src="page.js"></script>
+    </body>
+</html>

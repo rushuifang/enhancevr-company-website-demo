@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Contact</title>
+        <link rel="icon" href="pictures/logo.png" />
+    </head>
+    <body>
+        <div id="homepage-header"></div>
+        <div class="contact-text">
+            <h2>Get in contact with us!</h2>
+            <form action="action_page.php" method="get">
+                <fieldset>
+                    <legend>Tell us about yourself</legend>
+                    <input
+                        type="text"
+                        id="fname"
+                        placeholder="Your first name"
+                    />
+                    <input
+                        type="text"
+                        id="lname"
+                        placeholder="Your last name"
+                    />
+                    <input
+                        type="text"
+                        id="contact-email"
+                        placeholder="Your email address"
+                    />
+                    <input
+                        type="text"
+                        id="contact-phone"
+                        placeholder="Your phone number"
+                    /><br />
+                    <input
+                        type="text"
+                        id="contact-street"
+                        placeholder="Street"
+                    />
+                    <input type="text" id="contact-city" placeholder="City" />
+                    <input type="text" id="contact-state" placeholder="State" />
+                    <input type="text" id="contact-zip" placeholder="ZIP" />
+                    <input
+                        type="text"
+                        placeholder="How did you hear about us?"
+                    />
+                    <textarea
+                        rows="4"
+                        columns="100"
+                        placeholder="What can we help you with?"
+                    ></textarea>
+                    <input type="submit" placeholder="Submit" />
+                </fieldset>
+            </form>
+        </div>
+        <hr />
+        <div id="homepage-footer"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $("#homepage-header").load("header.html");
+            });
+            $(function () {
+                $("#homepage-footer").load("footer.html");
+            });
+        </script>
+    </body>
+</html>
